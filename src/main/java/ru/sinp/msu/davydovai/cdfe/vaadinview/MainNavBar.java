@@ -11,7 +11,8 @@ public class MainNavBar extends VerticalLayout {
         image.addClickListener(event -> {
             UI.getCurrent().navigate("/");
         });
+        Div div = new Div(image);
+        add(div);
 
-        add(new Div(image));
     }
 }
